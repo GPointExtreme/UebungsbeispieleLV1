@@ -6,7 +6,6 @@ public class ZinsDemo {
 	
 	public static void main(String[] args) {
 		// Übung 3 läuft!
-		{
 		Zinsberechnung();
 		}
 		
@@ -21,6 +20,4 @@ public class ZinsDemo {
 		}	
 
 	}
-
-}
 
