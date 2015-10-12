@@ -1,19 +1,26 @@
 
 public class ZinsDemo {
 
+	static double kontostand = 1000;
+	static double zinsen = 2.25;
+	
 	public static void main(String[] args) {
 		// Übung 3 läuft!
+		{
+		Zinsberechnung();
+		}
 		
-		int kontostand = 1000;
-		double zinsen = 2.25;
-		int ergebnis;
+	public static void Zinsberechnung()
+		{
+		double multiplikator = ((100+zinsen)/100);
+		double endStand = kontostand*multiplikator;
+		double zinsGewinn = (endStand-kontostand);
 		
-		//Calculation
-		ergebnis = kontostand + zinsen;
-				
-		//Output
-		System.out.println(string.format("%d + %d = %d" ,konstostand, zinsen, egebnis));
+		System.out.println("Der neue Kontostand ist " + endStand + "€");
+		System.out.println("Die Zinsen betragen " + zinsGewinn + "€");
+		}	
 
 	}
 
 }
+
